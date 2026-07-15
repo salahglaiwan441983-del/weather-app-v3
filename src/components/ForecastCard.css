@@ -1,0 +1,46 @@
+.forecast-card{
+    min-width:140px;
+    padding:18px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    background:white;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+    cursor:pointer;
+
+    transition:.35s ease;
+
+    border:2px solid rgba(255,255,255,.3);
+
+    backdrop-filter:blur(8px);
+}
+
+.forecast-card:hover{
+    transform:translateY(-8px) scale(1.06);
+
+    box-shadow:0 18px 35px rgba(0,0,0,.25);
+}
+
+.forecast-card p{
+    margin:8px 0;
+}
+
+.forecast-card p:first-child{
+    font-size:18px;
+    font-weight:bold;
+}
+
+@media (max-width:600px){
+
+    .forecast-card{
+
+        min-width:120px;
+
+        padding:15px;
+    }
+
+}
