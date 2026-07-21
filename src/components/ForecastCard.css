@@ -1,46 +1,39 @@
-.forecast-card{
-    min-width:140px;
-    padding:18px;
-
-    border-radius:20px;
-
+.forecastCard{
+    min-width:120px;
+    padding:15px;
+    border-radius:18px;
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(10px);
     text-align:center;
-
-    background:white;
-
-    box-shadow:0 8px 20px rgba(0,0,0,.15);
-
+    transition:.35s;
     cursor:pointer;
-
-    transition:.35s ease;
-
-    border:2px solid rgba(255,255,255,.3);
-
-    backdrop-filter:blur(8px);
+    color:white;
+    border:1px solid rgba(255,255,255,.2);
 }
 
-.forecast-card:hover{
-    transform:translateY(-8px) scale(1.06);
-
-    box-shadow:0 18px 35px rgba(0,0,0,.25);
+.forecastCard:hover{
+    transform:translateY(-8px) scale(1.05);
+    box-shadow:0 12px 25px rgba(0,0,0,.35);
 }
 
-.forecast-card p{
-    margin:8px 0;
+.forecastIcon{
+    font-size:40px;
+    margin:10px 0;
 }
 
-.forecast-card p:first-child{
+.forecastDay{
     font-size:18px;
+    font-weight:bold;
+    margin-bottom:10px;
+    color:#222;
+}
+
+.max{
+    color:#ff5252;
     font-weight:bold;
 }
 
-@media (max-width:600px){
-
-    .forecast-card{
-
-        min-width:120px;
-
-        padding:15px;
-    }
-
+.min{
+    color:#64b5f6;
+    font-weight:bold;
 }
